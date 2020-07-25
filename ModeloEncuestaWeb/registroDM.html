@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <title>Registrate</title>
+   
+</head>
+<body style="background-image: url(https://i.pinimg.com/originals/0c/da/b9/0cdab981a82c4308414cf625860cc766.jpg); height: 3500px; width: 720px;">
+    
+    <table id="registro">
+        <tr>
+            <td style="border: 2px solid #98D0E3;">
+                <form>
+                    <label style="color: #98D0E3; font-size: 24px;font-family: 'Audiowide', cursive;">Nombre:</label><br>
+                    <input type="text" id="nombre"><br><br>
+                    <label style="color: #98D0E3; font-size: 24px;font-family: 'Audiowide', cursive;">Apellido:</label><br>
+                    <input type="text" id="apellido"><br><br>
+                    <label style="color: #98D0E3; font-size: 24px;font-family: 'Audiowide', cursive;">Correo Electronico:</label><br>
+                    <input type="email" id="mail"><br><br>
+                    <label style="color: #98D0E3; font-size: 24px;font-family: 'Audiowide', cursive;">Edad:</label>
+                    <input type="number" minlength="5" id="edad"><br><br>
+                    <input type="button" style= " color: black; height: 50px; width: 250px;font-family: 'Audiowide', cursive; font-size: 24px; background-color: #98D0E3;" value="<--Inicio" action="./encuestaDM.html" id="inicio">
+                    <input type="button" style= "color: black; height: 50px; width: 250px;font-family: 'Audiowide', cursive; font-size: 24px; background-color: #98D0E3;" value="REGISTRO!!" id="aparecer">
+                
+                </form>
+            </td>
+        </tr>
+    </table>
+    
+    <div style="display: none; border: 2px solid #98D0E3; width: 1000px; height: 200px; padding-top: 100px; " id="final" align="center">
+        
+        <label style="color: #98D0E3; font-size: 24px;font-family: 'Audiowide', cursive; ">GRACIAS POR REGISTRARTE!!</label><br>
+        <P style="color: #98D0E3; font-size: 24px;font-family: 'Audiowide', cursive; "> te estaremos enviando un correo para confirmar la suscripcion</P>
+        <button style= " color: black; height: 50px; width: 250px;font-family: 'Audiowide', cursive; font-size: 24px; background-color: #98D0E3;" id="inicioF"> <-- INICIO</button>
+
+
+    </div>    
+
+    <script src="./registroDM.js"></script>
+</body>
+</html>
