@@ -3,6 +3,42 @@
 <head>
     <meta charset='utf-8'>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <style type="text/css">
+        .h1{
+             
+            font-family: 'Audiowide', cursive; 
+            text-align: center;
+            color: white; 
+
+        }
+        .table{
+            border: 1px solid white;
+
+        }
+        .tableDC{
+            border: 4px solid #98D0E3; 
+            
+
+        }
+        .labelDC{
+            color: #98D0E3; 
+            font-size: 24px; 
+            font-family: 'Audiowide', cursive;
+
+        }
+        .tableMARVEL{
+            border: 4px solid black;
+        }
+        .labelMARVEl{
+            color: black; 
+            font-weight:bold; 
+            font-size: 24px;
+            font-family: 'Audiowide', cursive;
+
+        }
+
+
+    </style>
     
     <title>Encuesta definitiva</title>
  
@@ -10,42 +46,43 @@
 
 <body background="./Imagenes/DCvsMARV.jpg">
     <center>
-   <header style=" height: 400px; width: 700px; background-repeat: no-repeat;" id="header">
-        <h1 style="color: white; font-family: 'Audiowide', cursive; text-align: center; padding-top: 75px;"> Bienvenidos a Marvel vs Dc</h1>
-        <h2 style="color: white; font-family: 'Audiowide', cursive; text-align: center; padding-top: 20px;"> La encuesta definitiva!!</h2>
+   <header style="background-image: url(./Imagenes/frontDCvsMARV.jpg); height: 400px; width: 700px; background-repeat: no-repeat;" id="header">
+        
+        <h1 style=" padding-top: 75px;" class="h1"> Bienvenidos a Marvel vs Dc</h1>
+        <h2 style=" padding-top: 20px;"class="h1"> La encuesta definitiva!!</h2>
     </header>
     </center>
    <main id="main">
     
     <div align="center" id="choice"style="padding-top:100px">
-        <table style="border: 1px solid white; ">
-            <h1 style="color:white;text-align: center;font-family: 'Audiowide', cursive;">Que marca prefieres?</h1> 
+        <table class="table">
+            <h1 class="h1">Que marca prefieres?</h1> 
         
-            <tr style="border: 1px solid white;">
-                <td style="border: 1px solid white;"><img id="dc" src="https://1.bp.blogspot.com/-pPN8rqD_oBA/TxmyrSyYrrI/AAAAAAAAET4/Kfqo6ExlhsY/s1600/DC+Logo.jpg"></a></td>
-                <td style="border: 1px solid white;"><img id="marvel" src="https://images-na.ssl-images-amazon.com/images/I/6145lbeE0QL._AC_SX522_.jpg"></a></td>
+            <tr class="table">
+                <td class="table"><img id="dc" src="./Imagenes/DC Logo.jpg"></a></td>
+                <td class="table"><img id="marvel" src="./Imagenes/MARVELlogo.jpg"></a></td>
             </tr>
-            <tr style="border: 1px solid white;">
+            <tr >
                 <td colspan="2" style="border: 1px solid #E85F00; color:#E85F00;font-family: 'Audiowide', cursive; text-align: center; font-size: 30px;">Click en la imagen!</td>            
             </tr>
         </table>
     </div>
     
     <div align="center" id="heroesDC" style="display: none;">
-        <table style="border: 4px solid #98D0E3; display: none; " id="tablaDC">
+        <table class="tableDC" style="display: none;" id="tablaDC">
             <tr>
                 <td><h2 style="color: #98D0E3; font-weight: bold; font-size: 36px; font-family: 'Audiowide', cursive;">Selecciona tus heroes favoritos!</h2></td>
             </tr>
-            <tr style="border: 4px solid #98D0E3;">
-                <td style="border: 4px solid #98D0E3;">
+            <tr class="tableDC">
+                <td class="tableDC">
                     <form id="elegirDC" style="display: none;" method="GET" action="./eleccionDC.html" >
                         <fieldset>
-                        <input type="radio" name="choiceDC" value="Superman" id="Superman"><label style="color: #98D0E3; font-size: 24px; font-family: 'Audiowide', cursive;" for="Superman"> Superman</label><br>
-                        <input type="radio" name="choiceDC" value="Batman" id="Batman"><label style="color: #98D0E3; font-size: 24px; font-family: 'Audiowide', cursive;" for="Batman"> Batman</label><br>
-                        <input type="radio" name="choiceDC" value="WonderWoman" id="WonderWoman"><label style="color: #98D0E3; font-size: 24px; font-family: 'Audiowide', cursive;" for="WonderWoman"> Wonder Woman</label><br>
-                        <input type="radio" name="choiceDC" value="GreenLatern" id="GreenLatern"><label style="color: #98D0E3; font-size: 24px; font-family: 'Audiowide', cursive;" for="GreenLatern"> Green Latern</label><br>
-                        <input type="radio" name="choiceDC" value="Flash" id="Flash"><label style="color: #98D0E3; font-size: 24px; font-family: 'Audiowide', cursive;" for="Flash"> Flash</label><br>
-                        <input type="radio" name="choiceDC" value="Aquaman" id="Aquaman"><label style="color: #98D0E3; font-size: 24px; font-family: 'Audiowide', cursive;" for="Aquaman"> Aquaman</label><br><br>                           
+                        <input type="radio" name="choiceDC" value="Superman" id="Superman"><label class="labelDC" for="Superman"> Superman</label><br>
+                        <input type="radio" name="choiceDC" value="Batman" id="Batman"><label class="labelDC" for="Batman"> Batman</label><br>
+                        <input type="radio" name="choiceDC" value="WonderWoman" id="WonderWoman"><label class="labelDC" for="WonderWoman"> Wonder Woman</label><br>
+                        <input type="radio" name="choiceDC" value="GreenLatern" id="GreenLatern"><label class="labelDC" for="GreenLatern"> Green Latern</label><br>
+                        <input type="radio" name="choiceDC" value="Flash" id="Flash"><label class="labelDC" for="Flash"> Flash</label><br>
+                        <input type="radio" name="choiceDC" value="Aquaman" id="Aquaman"><label class="labelDC" for="Aquaman"> Aquaman</label><br><br>                           
                         <input type="submit" name="votoDC" value="Aceptar">
                         </fieldset>
                     </form>
@@ -55,19 +92,19 @@
         </table>   
     </div>
     <div align="center" id="heroesMarv" style="display: none;">
-        <table style="border: 4px solid black; " id="tablaMarv">
+        <table class="tableMARVEL" id="tablaMarv">
             <tr>
                 <td><h2 style="color: black; font-weight: bold;font-family: 'Audiowide', cursive; font-size: 36px;">Selecciona tus heroes favoritos!</h2></td>
             </tr>
-            <tr style="border: 4px solid black;">
-                <td style="border:4px solid black;">
+            <tr class="tableMARVEL">
+                <td class="tableMARVEL">
                     <form id="elegirMarv" style="display: none;" method="GET" action="./eleccionMarvel.html">
-                        <input type="radio" name="choiceM" value="SpiderMan" id="SpiderMan"><label style="color: black; font-weight:bold; font-size: 24px;font-family: 'Audiowide', cursive;" for="SpiderMan"> Spiderman</label><br>
-                        <input type="radio" name="choiceM" value="IronMan" id="IronMan"><label style="color: black; font-weight:bold; font-size: 24px;font-family: 'Audiowide', cursive;" for="IronMan"> Ironman</label><br>
-                        <input type="radio" name="choiceM" value="CaptainAmerica" id="CaptainAmerica"><label style="color: black; font-weight:bold; font-size: 24px;font-family: 'Audiowide', cursive;" for="CaptainAmerica"> Captain America</label><br>
-                        <input type="radio" name="choiceM" value="Thor" id="Thor"><label style="color: black; font-weight:bold; font-size: 24px;font-family: 'Audiowide', cursive;" for="Thor"> Thor</label><br>
-                        <input type="radio" name="choiceM" value="Hulk" id="Hulk"><label style="color: black; font-weight:bold; font-size: 24px;font-family: 'Audiowide', cursive;" for="Hulk"> Hulk</label><br>                        
-                        <input type="radio" name="choiceM" value="Deadpool" id="Deadpool"><label style="color: black; font-weight:bold; font-size: 24px;font-family: 'Audiowide', cursive;" for="Deadpool"> Deadpool</label><br><br>                       
+                        <input type="radio" name="choiceM" value="SpiderMan" id="SpiderMan"><label class="labelMARVEl" for="SpiderMan"> Spiderman</label><br>
+                        <input type="radio" name="choiceM" value="IronMan" id="IronMan"><label class="labelMARVEl" for="IronMan"> Ironman</label><br>
+                        <input type="radio" name="choiceM" value="CaptainAmerica" id="CaptainAmerica"><label class="labelMARVEl" for="CaptainAmerica"> Captain America</label><br>
+                        <input type="radio" name="choiceM" value="Thor" id="Thor"><label class="labelMARVEl" for="Thor"> Thor</label><br>
+                        <input type="radio" name="choiceM" value="Hulk" id="Hulk"><label class="labelMARVEl" for="Hulk"> Hulk</label><br>                        
+                        <input type="radio" name="choiceM" value="Deadpool" id="Deadpool"><label class="labelMARVEl" for="Deadpool"> Deadpool</label><br><br>                       
                         <input type="submit" name="votoMarv" value="Aceptar">
                     </form>
 
